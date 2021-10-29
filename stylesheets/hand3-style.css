@@ -1,0 +1,635 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../assets/bg-hand5.jpg");
+    background-size: 100vw 100vh;
+    background-position: initial;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #015E89;
+    height: 60px;
+    transition: 0.5s;
+}
+
+.topnav-left {
+    overflow: hidden;
+    background-color: #015E89;
+}
+
+.topnav-left img {
+    position: absolute;
+    float: left;
+    top: 5px;
+    padding-left: 20px;
+    height: 50px;
+} 
+
+.topnav-left h1 {
+    position: absolute;
+    float: right;
+    display: block;
+    color: white;
+    font-weight: bolder;
+    top: -10px;
+    margin-left: 120px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.topnav-left h1:hover {
+    animation: in 1s ease-out forwards;
+}
+
+@keyframes in {
+    0% {
+        letter-spacing: 3px;
+    }
+
+    30% {
+        letter-spacing: 6px;
+    }
+
+    100% {
+        letter-spacing: 9px;
+    }
+}
+  
+.topnav a {
+    float: right;
+    display: block;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+  
+.topnav a:hover {
+    color: black;
+}
+  
+.topnav .icon {
+    display: none;
+}
+  
+@media screen and (max-width: 768px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .topnav.responsive {
+        position: relative;
+        height: 100vh;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        color: black;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .topnav.responsive #fir {
+        margin-top: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    body {
+    background-image: url("../assets/bg-hand6.png");
+    background-size: 100vw 100vh;
+    background-position: initial;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    }
+
+    .topnav-left img {
+        position: absolute;
+        float: left;
+        top: 8px;
+        padding-left: 20px;
+        height: 40px;
+    }
+
+    .topnav-left h1 {
+        position: absolute;
+        float: right;
+        display: block;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        top: 5px;
+        margin-left: 100px;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+}
+
+#countdown {
+    position: relative;
+    margin: auto;
+    margin-top: 175px;
+    margin-right: 75px;
+    text-align: center;
+}
+  
+#countdown-number {
+    position: absolute;
+    color: white;
+    display: inline-block;
+    font-size: 30px;
+    right: 140px;
+    margin-top: 60px;
+}
+  
+svg {
+    position: absolute;
+    display: inline-block;
+    top: -250px;
+    right: 50px;
+    height: 600px;
+    width: 500px;
+    transform: rotateY(-180deg) rotateZ(-90deg);
+}
+  
+#circle1 {
+    stroke-dasharray: 942px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 15px;
+    stroke: rebeccapurple;
+    fill: none;
+    animation: countdown 3600s linear infinite forwards;   /*  1 hour  */
+}
+  
+@keyframes countdown {
+    from {
+      stroke-dashoffset: 0px;
+    }
+    to {
+      stroke-dashoffset: 942px;
+    }
+}
+
+#countdown2 {
+    position: relative;
+    margin: auto;
+    margin-top: 175px;
+    margin-right: 75px;
+    text-align: center;
+}
+    
+#circle2 {
+    stroke-dasharray: 765px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 15px;
+    stroke: salmon;
+    fill: none;
+    animation: countdown 60s linear infinite forwards;
+}
+  
+@keyframes countdown {
+    from {
+      stroke-dashoffset: 0px;
+    }
+    to {
+      stroke-dashoffset: 765px;
+    }
+}
+
+#countdown-main {
+    position: relative;
+    margin: auto;
+    margin-top: 175px;
+    margin-right: 75px;
+    text-align: center;
+}
+    
+#circle-main {
+    stroke-dasharray: 50px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke: whitesmoke;
+    fill: none;
+}
+
+#clockWords {
+    position: relative;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    float: right;
+    top: 90px;
+    right: 200px;
+    font-size: 11px;
+}
+
+#small-countdown-main, #small-countdown, #small-countdown2 {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    #countdown-main, #countdown, #countdown2, #clockWords {
+        display: none;
+    }
+
+    svg {
+        position: absolute;
+        display: inline-block;
+        top: -220px;
+        right: 210px;
+        height: 500px;
+        width: 300px;
+        transform: rotateY(-180deg) rotateZ(-90deg);
+    }  
+    
+    #small-countdown-main {
+        position: relative;
+        display: inline-block;
+        margin: auto;
+        margin-top: 25px;
+        top: -80px;
+        left: 410px;
+        text-align: center;
+    }
+
+    #small-circle-main {
+        stroke-dasharray: 50px;
+        stroke-dashoffset: 0px;
+        stroke-linecap: round;
+        stroke-width: 2px;
+        stroke: whitesmoke;
+        fill: none;
+    }
+
+    #small-countdown {
+        position: relative;
+        display: inline-block;
+        margin: auto;
+        margin-top: 25px;
+        top: -80px;
+        left: 410px;
+        text-align: center;
+    }
+
+    #small-circle1 {
+        stroke-dasharray: 558px;
+        stroke-dashoffset: 0px;
+        stroke-linecap: round;
+        stroke-width: 15px;
+        stroke: rebeccapurple;
+        fill: none;
+        animation: countdown 3600s linear infinite forwards;   /*  1 hour  */
+    }
+
+    @keyframes countdown {
+        from {
+          stroke-dashoffset: 0px;
+        }
+        to {
+          stroke-dashoffset: 558px;
+        }
+    }
+
+    #small-countdown2 {
+        position: relative;
+        display: inline-block;
+        margin: auto;
+        margin-top: 25px;
+        top: -80px;
+        left: 407px;
+        text-align: center;
+    }
+
+    #small-circle2 {
+        stroke-dasharray: 372px;
+        stroke-dashoffset: 0px;
+        stroke-linecap: round;
+        stroke-width: 15px;
+        stroke: salmon;
+        fill: none;
+        animation: countdown 60s linear infinite forwards;
+    }
+      
+    @keyframes countdown {
+        from {
+          stroke-dashoffset: 0px;
+        }
+        to {
+          stroke-dashoffset: 372px;
+        }
+    }
+    
+}
+
+.hero-container h1 {
+    position: relative;
+    color: white;
+    font-weight: lighter;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: default;
+    font-size: 50px;
+    left: 100px;
+}
+
+.hero-container h3 {
+    position: relative;
+    cursor: default;
+    color: whitesmoke;
+    font-weight: lighter;
+    left: 100px;
+    top: -20px;
+}
+
+.button {
+    background-color: #015E89;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 50px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    overflow:hidden;
+    width: auto;
+    max-width: 32px;
+    -webkit-transition: max-width 0.5s;
+    transition: max-width 0.5s;
+}
+
+.button {
+    position: relative;
+    top: -10px;
+    left: 100px;
+}
+  
+.button:hover {
+    max-width: 300px;
+}
+  
+#icon {
+    font-size: 25px;
+    margin-right: 15px;
+    padding: 0px 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+  
+.text {
+    white-space: nowrap;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    padding-right: 15px;
+}
+
+.snooze {
+    background-color: #015E89;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 50px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    overflow:hidden;
+    width: auto;
+    max-width: 32px;
+    -webkit-transition: max-width 0.5s;
+    transition: max-width 0.5s;
+}
+
+.snooze {
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+.snooze:hover {
+    max-width: 300px; 
+}
+
+#snooze-icon {
+    font-size: 25px;
+    margin-right: 15px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#snooze-text {
+    white-space: nowrap;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: black ;
+    background: none;
+    cursor: pointer;
+    padding-right: 15px;
+}
+
+.off {
+    background-color: #015E89;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 50px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    overflow:hidden;
+    width: auto;
+    max-width: 32px;
+    -webkit-transition: max-width 0.5s;
+    transition: max-width 0.5s;
+}
+
+.off {
+    position: relative;
+    top: 17px;
+    left: 30px;
+}
+
+.off:hover {
+    max-width: 300px; 
+}
+
+#off-icon {
+    font-size: 20px;
+    margin-right: 15px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#off-text {
+    white-space: nowrap;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: black ;
+    background: none;
+    cursor: pointer;
+    padding-right: 15px;
+}
+
+.settings {
+    background-color: #015E89;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 50px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    overflow:hidden;
+    width: auto;
+    max-width: 32px;
+    -webkit-transition: max-width 0.5s;
+    transition: max-width 0.5s;
+}
+
+.settings {
+    position: relative;
+    top: 17px;
+    left: 30px;
+}
+
+.settings:hover {
+    max-width: 300px; 
+}
+
+#settings-icon {
+    font-size: 20px;
+    margin-right: 15px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#settings-text {
+    white-space: nowrap;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: black ;
+    background: none;
+    cursor: pointer;
+    padding-right: 15px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 786px) {
+
+    .snooze {
+        height: 20px;
+        max-width: 20px;
+        left: 10px;
+        top: 10px;
+    }
+
+    #snooze-icon {
+        font-size: 20px;
+        padding: 2px;
+    }
+
+    .snooze:hover {
+        max-width: 300px; 
+    }
+
+    .off {
+        height: 20px;
+        max-width: 20px;
+        left: 10px;
+        top: 8px;
+    }
+
+    #off-icon {
+        font-size: 15px;
+        padding: 2px;
+    }
+
+    .off:hover {
+        max-width: 300px; 
+    }
+
+    .settings {
+        height: 20px;
+        max-width: 20px;
+        left: 10px;
+        top: 10px;
+    }
+
+    #settings-icon {
+        font-size: 20px;
+        padding: 2px;
+    }
+
+    .settings:hover {
+        max-width: 300px; 
+    }
+
+    .hero-container h1 {
+        font-size: 25px;
+        top: 280px;
+        left: 40px;
+    }
+
+    .hero-container h3 {
+        text-align: center;
+        font-size: 15px;
+        left: -60px;
+        top: 280px;
+        padding: 0px 30px 0px 150px;
+    }
+
+    .button {
+        height: 50px;
+        max-width: 40px;
+        top: -75px;
+        left: 155px;
+        padding: 10px;
+    }
+
+    .button:hover {
+        max-width: 40px;
+    }
+
+    .text {
+        display: none;
+    }
+        
+    #icon {
+        position: relative;
+        font-size: 30px;
+    }
+
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/favicon.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+        </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+        </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+        </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../stylesheets/hand2-style.css" rel="stylesheet">
+    <script src="../script/script.js"></script>
+    <title> Hand Wash Reminder </title>
+</head>
+<body>
+
+    <div class="topnav-left" id="heading">
+        <a href="../index.html"><img src="../assets/mask-dark.png" id="symbol"></a>
+        <a href="../index.html"><h1> Pandemic Pal </h1></a>
+    </div>
+
+    <div class="topnav" id="myTopnav">
+        <a id="fir" href="../pages/covid.html"> Covid Stats </a>
+        <a href="../pages/mask.html"> Masks Up </a>
+        <a href="../pages/hand.html"> Clean Hands </a>
+        <a href="../index.html"> Home </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <a href="../index.html" class="skip"> Skip </a>
+
+    <div class="hero-content">
+        <h1 id="l2" class="med"> Can you help us with a few informations </h1>
+        <h1 id="sl1" class="med"> Can you help us with a few informations to costomize </h1>
+        <h1 id="sl2" class="med"> experience for you? </h1>
+        <h1 id="l2" class="med"> to costomize experience for you? </h1>
+    </div>
+
+    <hr> <hr/> 
+
+    <div class="questions">
+        <h1 class="labels"> Wake up and Sleep </h1>
+        <input type="time" value="09:00" class="time" id="wake_up_time">
+        <input type="time" value="21:00" class="time" id="sleep_time">
+        <h1 id="q2" class="labels"> Are you a person who spends most time outdoors? </h1>
+        <button class="outdoor" onclick="outdoors_t()"> Yes </button>
+        <button class="outdoor" onclick="outdoors_f()"> No </button>
+    </div>
+
+    <audio id="sound" loop>
+        <source src="../alert/handwash.mp3" type="audio/mp3">
+    </audio>
+    <p id="time"></p>
+    <div class="buttons">
+        <h1 id="message"> </h1>
+        <h1 id="message2"> </h1>
+        <h1 id="message3"> </h1>
+        <button id="continue" onclick="remindMe()"> Continue </button>
+    </div>
+
+    <div class="next">
+        <a id="next" href="./hand3.html"> Next &rArr; </a>
+    </div>
+    
+</body>
+</html>

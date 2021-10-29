@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/favicon.png" type="image/x-icon">
+    <script src="../script/script.js"></script>
+    <link href="../stylesheets/mask-style.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+        </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+        </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/bb91c29888.js" crossorigin="anonymous"></script>
+    <title> Mask Remainder </title>
+</head>
+<body>
+
+    <div class="topnav-left" id="heading">
+        <a href="../index.html"><img src="../assets/mask-light.png" id="symbol"></a>
+        <a href="../index.html"><h1> Pandemic Pal </h1></a>
+    </div>
+
+    <div class="topnav" id="myTopnav">
+        <a id="fir" href="./covid.html"> Covid Stats </a>
+        <a href="./mask.html"> Masks Up </a>
+        <a href="./hand.html"> Clean Hands </a>
+        <a href="../index.html"> Home </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="hero-container">
+        <h1> Wear your Mask </h1>
+        <h3> Love is in the Air. So is the Covid.</h3>
+        <h5> Get notified to wear your mask everytime you head out home. 
+            <button onclick="getLocation()"> Notify me </button>
+        </h5>
+    </div>
+    <div class="info"> 
+        <i id="info-icon" class="fas fa-info-circle"></i>
+        <p id="info-text"> Disable Geolocation to pause notifications </p>
+    </div>
+
+</body>
+</html>

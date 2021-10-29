@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../assets/geo.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-position: initial;
+    overflow: hidden;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    height: 60px;
+    transition: 0.5s;
+}
+
+.topnav-left {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav-left img {
+    position: absolute;
+    float: left;
+    top: 5px;
+    padding-left: 20px;
+    height: 50px;
+} 
+
+.topnav-left h1 {
+    position: absolute;
+    float: right;
+    display: block;
+    color: white;
+    font-weight: bold;
+    top: -10px;
+    margin-left: 120px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.topnav-left h1:hover {
+    animation: in 1s ease-out forwards;
+}
+
+@keyframes in {
+    0% {
+        letter-spacing: normal;
+    }
+
+    50% {
+        letter-spacing: 9px;
+    }
+
+    100% {
+        letter-spacing: normal;
+    }
+}
+  
+.topnav a {
+    float: right;
+    display: block;
+    color: grey;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+  
+.topnav a:hover {
+    color: white;
+}
+  
+.topnav .icon {
+    display: none;
+}
+  
+@media screen and (max-width: 768px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .topnav.responsive {
+        position: relative;
+        height: 100vh;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .topnav.responsive #fir {
+        margin-top: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    body {
+    background-image: url("../assets/geo2.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-position: initial;
+    overflow: hidden;
+    }
+
+    .topnav-left img {
+        position: absolute;
+        float: left;
+        top: 8px;
+        padding-left: 20px;
+        height: 40px;
+    }
+
+    .topnav-left h1 {
+        position: absolute;
+        float: right;
+        display: block;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        top: 5px;
+        margin-left: 100px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .topnav-left h1:hover {
+        animation: none;
+    }
+    
+}
+
+.hero-content {
+    font-family: 'Ubuntu', sans-serif;
+    cursor: default;
+}
+
+.hero-content h1 {
+    position: relative;
+    padding: 50px 0px 0px 300px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.hero-content .med {
+    position: relative;
+    padding-left: 300px;
+    font-size: 50px;
+}
+
+.hero-content .large {
+    position: relative;
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 60px;
+    color:rgb(62, 62, 192);
+}
+
+.hero-content h3 {
+    position: relative;
+    padding-left: 300px;
+}
+
+#q1 {
+    position: relative;
+    height: 30px;
+    top: -60px;
+    margin-left: 280px;
+}
+
+#q2 {
+    position: relative;
+    height: 30px;
+    top: -35px;
+    margin-left: 555px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    .hero-content h1 {
+        position: relative;
+        padding-left: 30px;
+        font-weight: bold;
+        font-size: 15px;
+        padding-top: 40vh;
+    }
+
+    .hero-content .med {
+        position: relative;
+        padding-left: 20px;
+        font-size: 23px;
+    }
+
+    .hero-content .large {
+        position: relative;
+        font-weight: bold;
+        padding-left: 10px;
+        font-size: 32px;
+        color:rgb(62, 62, 192);
+    }
+
+    .hero-content h3 {
+        position: relative;
+        padding-left: 20px;
+        font-size: 12px;
+    }
+}
+
+#footer-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#footer-container::before {
+    content: '';
+    position: absolute; 
+    overflow: hidden;
+    top: 92vh;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: black;
+    opacity: 0.5;
+}
+
+.footer-text {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif ;
+    font-weight: lighter;
+    font-size: 12px;
+    bottom: -11vh;
+    padding-left: 10px;
+}
+
+#contact a {
+    position: relative;
+    font-size: 15px;
+    color: black;
+    padding-right: 10px ;
+}
+
+@media screen and (max-width:768px) {
+    .footer-text {
+        max-width: 60vw;
+        bottom: -6vmin;
+        font-size: 11px;
+    }
+
+    #footer-container {
+        display: none;
+    }
+}

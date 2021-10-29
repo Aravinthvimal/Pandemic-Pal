@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../assets/bg-hand.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: initial;
+}
+.topnav {
+    overflow: hidden;
+    background-color: whitesmoke;
+    height: 60px;
+    transition: 0.5s;
+}
+
+.topnav-left {
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+.topnav-left img {
+    position: absolute;
+    float: left;
+    top: 5px;
+    padding-left: 20px;
+    height: 50px;
+} 
+
+.topnav-left h1 {
+    position: absolute;
+    float: right;
+    display: block;
+    color: black;
+    font-weight: bolder;
+    top: -10px;
+    margin-left: 120px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.topnav-left h1:hover {
+    animation: in 1s ease-out forwards;
+}
+
+@keyframes in {
+    0% {
+        letter-spacing: 3px;
+    }
+
+    30% {
+        letter-spacing: 6px;
+    }
+
+    100% {
+        letter-spacing: 9px;
+    }
+}
+  
+.topnav a {
+    float: right;
+    display: block;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+  
+.topnav a:hover {
+    color: black;
+}
+  
+.topnav .icon {
+    display: none;
+}
+  
+@media screen and (max-width: 768px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .topnav.responsive {
+        position: relative;
+        height: 100vh;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        color: black;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .topnav.responsive #fir {
+        margin-top: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    body {
+    background-image: url("../assets/bg-hand2.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-position: initial;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: rgb(109, 188, 241);
+        height: 60px;
+        transition: 0.5s;
+    }
+    
+    .topnav-left {
+        overflow: hidden;
+        background-color: rgb(109, 188, 241);
+    }
+
+    .topnav-left img {
+        position: absolute; 
+        float: left;
+        top: 8px;
+        padding-left: 20px;
+        height: 40px;
+    }
+
+    .topnav-left h1 {
+        position: absolute;
+        float: right;
+        display: block;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        top: 5px;
+        margin-left: 100px;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+}
+
+.hero-container {
+    position: relative;
+    top: 150px;
+    padding-left: 200px;
+    cursor: default;
+}
+
+#med-bold {
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#l1 {
+    position: relative;
+    font-size: 25Px;
+    top: -10px;
+    font-family: 'Quicksand', sans-serif;   
+}
+
+#l2{
+    position: relative;
+    font-size: 25px;
+    top: -60px;
+    font-family: 'Quicksand', sans-serif;    
+}
+
+#main {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    color: blue;
+    font-size: 50px;
+    top: -35px;
+}
+
+#small-thin {
+    position: relative;
+    font-weight: lighter;
+    font-family: 'Ubuntu', sans-serif ;
+    font-size: 20px;
+    top: -60px;
+}
+
+.hero-container a {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif ;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.hero-container a:hover {
+    font-size: 25px;
+    color: blueviolet;
+}
+
+@media screen and (max-width: 786px) {
+
+    .hero-container {
+        position: relative;
+        top: 60vh;
+        float: right;
+        padding-right: 15px;
+        text-align: right;
+        padding-left: 30px;
+    }
+
+    #med-bold {
+        display: none;
+    }
+
+    #l1 {
+        position: relative;
+        font-size: 15px;
+        top: 1px;
+        color: white;
+        font-family: 'Quicksand', sans-serif;   
+    }
+
+    #l2{
+        position: relative;
+        font-size: 15px;
+        top: -20px;
+        color: white;
+        font-family: 'Quicksand', sans-serif;    
+    }
+
+    #main {
+        position: relative;
+        font-family: 'Ubuntu', sans-serif;
+        color: orangered;
+        font-size: 30px;
+        top: -10px;
+    }
+
+    #small-thin {
+        position: relative;
+        font-weight: lighter;
+        font-family: 'Ubuntu', sans-serif ;
+        color: white;
+        font-size: 15px;
+        top: 380px;
+    }
+
+    .hero-container a {
+        position: relative;
+        font-family: 'Ubuntu', sans-serif ;
+        text-decoration: none;
+        top: -75vh;
+        color: white;         
+        transition: 0.5s;
+        font-size: 20px;
+    }
+
+    .hero-container a:hover {
+        font-size: 25px;
+        color: orangered;
+    }
+
+    #stats {
+        position: relative;
+        top: -75vh;
+    }
+
+}
+
+#stats {
+    position: relative;
+    display: block;
+}
+
+
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/favicon.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+        </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+        </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+        </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/bb91c29888.js" crossorigin="anonymous"></script>
+    <link href="../stylesheets/hand3-style.css" rel="stylesheet">
+    <script src="../script/script.js"></script>
+    <title> Hand Wash Reminder </title>
+</head>
+<body onload="countdowntimer()">
+
+    <div class="topnav-left" id="heading">
+        <a href="../index.html"><img src="../assets/mask-light.png" id="symbol"></a>
+        <a href="../index.html"><h1> Pandemic Pal </h1></a>
+    </div>
+
+    <div class="topnav" id="myTopnav">
+        <a id="fir" href="../pages/covid.html"> Covid Stats </a>
+        <a href="./mask.html"> Masks Up </a>
+        <a href="./hand.html"> Clean Hands </a>
+        <a href="../index.html"> Home </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="snooze">
+        <i id="snooze-icon" class="fas fa-stopwatch-20"></i>
+        <p id="snooze-text" onclick="snooze()"> Snooze Reminder for the day </p>
+    </div>
+
+    <div class="off">
+        <i id="off-icon" class="far fa-bell-slash"></i>
+        <p id="off-text" onclick="off()"> Turn off Reminders </p>
+    </div>
+
+    <div class="settings">
+        <i id="settings-icon" class="fas fa-cog"></i>
+        <a href="./hand2.html"id="settings-text"> Edit your Sleep and Wake Time </a>
+    </div>
+
+
+    <div id="countdown-main">
+        <div id="countdown-number"></div>
+        <svg>
+          <circle id="circle-main" r="175" cx="200" cy="200" ></circle>
+        </svg>
+    </div>
+
+    <div id="countdown">
+        <div id="countdown-number"></div>
+        <svg height="600" width="600">
+          <circle id="circle1" r="150" cx="200" cy="200" ></circle>
+        </svg>
+    </div>
+
+    <div id="countdown2">
+        <div id="countdown-number"></div>
+        <svg height="600" width="600">
+          <circle id="circle2" r="125" cx="200" cy="200" ></circle>
+        </svg>
+    </div>
+
+    <div id="clockWords">
+        <p> Eat, Drink and be Quarantined </p>
+    </div>                                                                    
+
+    <div class="hero-container">
+        <h1> WASH . RINSE . SANITIZE </h1>
+        <h3> Wash your hands once the alarm goes off and click the button to record it. </h3>
+    </div>
+
+    <div id="small-countdown-main">
+        <svg>                                                                      
+            <circle id="small-circle-main" r="115" cx="120" cy="120" ></circle>
+        </svg>
+    </div>
+
+    <div id="small-countdown">
+        <svg>
+            <circle id="small-circle1" r="90" cx="120" cy="120" ></circle>
+        </svg>
+    </div>
+
+    <div id="small-countdown2">
+        <svg>
+            <circle id="small-circle2" r="60" cx="120" cy="120" ></circle>
+        </svg>  
+    </div>
+
+    <audio id="sound" loop>
+        <source src="handwash.mp3" type="audio/mp3">
+    </audio>
+    <p id="time"></p>
+    <div class="button">
+        <i onclick="washdone()" id="icon" class="fas fa-pump-medical"></i>
+        <button class="text" onclick="washDone()"> I have washed my hands! </button>
+    </div>
+
+</body>
+</html>
